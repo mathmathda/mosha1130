@@ -1,0 +1,112 @@
+/* PC、スマホ共通スタイル */
+body {
+  font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+}
+
+	
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+
+
+
+
+p {
+  font-size: 15px;
+}
+
+/* ============
+PC用のスタイル
+=============*/
+/* 横幅設定 */
+
+body {
+  max-width: 1080px;
+  min-width: 960px;
+  margin: 0 auto 0 auto;
+}
+
+/* ヘッダー */
+header {
+  display: flex;
+}
+
+/* ナビゲーションのレイアウト */
+
+/* 以下無視されてる？ */
+.box {
+  position: absolute;
+  width: 220px;
+  height: 69px;
+  left: 179px;
+  top: 20px;
+  border: 1px solid #000;
+  margin: auto;
+  padding: auto;
+  text-align: center;
+  padding-top: 11px;
+}
+
+h1 {
+  font-family: 'notosansjp'sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  margin: auto;
+  padding: auto;
+}
+
+#nav-pc {
+  text-align: right;
+  font-family: 'notosansjp'sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 46.31px;
+}
+
+.nav-about {
+  position: absolute;
+  width: 104px;
+  height: 46px;
+  left: 531px;
+  top: 31px;
+}
+
+.nav-works {
+  position: absolute;
+  width: 104px;
+  height: 46px;
+  left: 670px;
+  top: 31px;
+}
+
+#nav-pc > a {
+  text-decoration: none;
+  margin-left: 20px; 
+}
+#nav-pc > a:link {
+  color: #000;
+ }
+ #nav-pc > a:visited {
+  color: #000;
+ }
+ #nav-pc > a:hover {
+  color: #000;
+  text-decoration: underline;
+ }
+ #nav-pc > a:active {
+  color: #000;
+ }
+
+/* ============
+メインビジュアル
+=============*/
+#main-visual {
+  position: absolute;
+  width: 960px;
+  height: 400px;
+  left: 0px;
+  top: 109px;
+}
+
+/* ============
+ABOUT
+=============*/
