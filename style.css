@@ -1,220 +1,151 @@
-/* PC、スマホ共通スタイル */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;700&display=swap');
-
+/* bodyの余白をなくす */
 body {
-  font-family:  "Noto Sans JP"
-}
-	
-
-p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24.52px;
+  padding: 0px;
+  margin: 0px;
 }
 
 /* ============
-PC用のスタイル
+ナビゲーション
+メニュー
 =============*/
-/* 横幅設定 */
 
-body {
-  max-width: 1080px;
-  min-width: 960px;
-  margin: 0 auto 0 auto;
-}
-
-/* ヘッダー */
-header {
+nav {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px auto 20px auto;
+  max-width: 960px;
 }
 
-/* ナビゲーションのレイアウト */
+/* nav a はどういう意味？ */
+nav a {
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 34px;
+  color: black;
+  font-family: "Noto Sans JP", sans-serif;
+}
 
-.box {
-  position: absolute;
-  width: 220px;
-  height: 69px;
-  left: 179px;
-  top: 20px;
-  border: 1px solid #000;
-  margin: auto;
-  padding: auto;
-  text-align: center;
-  padding-top: 11px;
+/* ナビゲーションメニューのMyProfileの部分 */
+.home {
+  border: 1px solid black;
+  padding: 0px 20px;
+  margin-left: 20px;
+}
+
+/* メニューの余白 */
+.menu > a {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* なぜここで指定？ */
+.name {
+  font-size: 24px;
+  font-weight: bold;
 }
 
 h1 {
-  font-family: 'notosansjp'sans-serif;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  text-align: center;
   font-size: 34px;
-  font-weight: 700;
-  margin: auto;
-  padding: auto;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
-#nav-pc {
-  text-align: right;
-  font-family: 'notosansjp'sans-serif;
-  font-size: 34px;
-  font-weight: 700;
-  line-height: 46.31px;
+p {
+  font-size: 18px;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
-.nav-about {
-  position: absolute;
-  width: 104px;
-  height: 46px;
-  left: 531px;
-  top: 31px;
-}
-
-.nav-works {
-  position: absolute;
-  width: 104px;
-  height: 46px;
-  left: 670px;
-  top: 31px;
-}
-
-#nav-pc > a {
-  text-decoration: none;
-  margin-left: 20px; 
-}
-#nav-pc > a:link {
-  color: #000;
- }
- #nav-pc > a:visited {
-  color: #000;
- }
- #nav-pc > a:hover {
-  color: #000;
-  text-decoration: underline;
- }
- #nav-pc > a:active {
-  color: #000;
- }
-
-/* ============
-メインビジュアル
-=============*/
-.camera {
-  position: absolute;
-  width: 960px;
-  height: 400px;
-  left: 0px;
-  top: 109px;
-}
-
-/* ============
-ABOUT
-=============*/
-#about {
-  position: absolute;
-  width: 104px;
-  height: 46px;
-  top: 559px;
-  left: 428px;
-}
-
-.kazuki-photo {
-  position: absolute;
-  width: 141px;
-  height: 142px;
-  top: 631px;
-  left: 180px;
-}
-
-#kazuki-asahina-txt  {
-  position: absolute;
-  height: 33px;
-  top: 627px;
-  left: 354px;
-}
-
-h2 {
-  font-size: 24px;
-  font-weight: 700;
-  margin: auto;
-}
-
-#profile  {
-  position: absolute;
-  height: 100px;
-  width: 405px;
-  top: 673px;
-  left: 354px;
-}
-
-/* ============
-WORKS
-=============*/
-
-#works {
-  position: absolute;
-  width: 104px;
-  height: 46px;
-  top: 817px;
-  left: 428px;
-}
-
-#works1 {
-  position:absolute;
-  top: 892px;
-  left: 193px;
-}
-
-.works1 {
-  width: 179px;
-  height: 134px;
-}
-
-#works1-txt {
-  position: absolute;
-  width: 178px;
-  height: 93px;
-  top: 1053px;
-  left: 193px;
-  margin: 0px;
-}
-
-#works2 {
-  position:absolute;
-  top: 892px;
-  left: 390px;
-}
-.works2 {
-  width: 179px;
-  height: 134px;
-}
-#works2-txt {
-  position: absolute;
-  width: 178px;
-  height: 93px;
-  top: 1053px;
-  left: 390px;
-  margin: 0px;
+li {
+  font-size: 18px;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 
-#works3 {
-  position:absolute;
-  top: 892px;
-  left: 587px;
-}
-.works3 {
-  width: 179px;
-  height: 134px;
-}
-#works3-txt {
-  position: absolute;
-  width: 178px;
-  height: 93px;
-  top: 1053px;
-  left: 587px;
-  margin: 0px;
+/* divの不要な空白を削除 */
+/* font-sizeをゼロにして空白が消えるのか？ */
+div {
+  font-size: 0;
 }
 
-footer {
-  background-color: #000;
-  color:whitesmoke;
-  float: right;
+/* メイン画像 */
+.mainpic {
+  width: 100%;
+}
+
+/* imgはいくつもあるのに、一括設定でよいのか */
+img {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 100%;
+}
+
+/* なぜちゃんと頁の真ん中に来ているのか？？ */
+/* About */
+.about {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20px auto 20px auto;
+  max-width: 960px;
+}
+
+/* マルク切り取る画像 */
+/* borderに色？丸に加工しなくても、元のイメージが丸い */
+.circle {
+  border-radius:  50%;
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border: 3px solid #999;
+  padding: 3px;
+}
+
+/* プロフィールの説明部分 */
+.content {
+  margin: 0 auto;
+  padding-left: 40px;
+}
+
+/* works */
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px auto 20px auto;
+  max-width: 960px;
+  }
+
+  /* 親ボックスの中の子ボックスのpaddingのことか？
+  1番目と3番目が左右の端に配置されるのはなぜか
+  中央の設定がわからない*/
+.item {
+  padding-bottom: 60px;
+  width: 25%;
+}
+
+
+/* Worksの画像と説明部分（2個目） */
+.item_center {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+/* フッター */
+footer p {
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+/* 横幅が767pxまでの場合 */
+@media (max-width: 767px) {
+  .item {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 40px;
+  }
 }

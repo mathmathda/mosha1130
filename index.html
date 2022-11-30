@@ -2,84 +2,88 @@
   <html lang="ja">
   
   <head>
-    <title>模写1128</title>
+    <title>模写1130</title>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
     <meta name="description" content="初めての模写です。"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <link rel="stylesheet" href="style.css">
     <link href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
+
+    <!-- 以下はフォント？ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   </head>
 
   <body>
     <header>
-      <div class="box"><h1>MyProfile</h1></div>
-      <nav id="nav-pc">
-        <a href="index.html#about" class="nav-about">About</a>
-        <a href="index.html#works" class="nav-works">Works</a>
+      <nav>          
+        <div>
+          <a href="index.html" class="home">MyProfile</a>
+        </div>
+        <div class="menu">
+          <a href="#about">About</a>
+          <a href="#works">Works</a>
+        </div>
       </nav>
     </header>
     
     <main>
       <article>
-        <!-- section id は必要か？見やすいだけで機能なし -->
-        <section id="main-visual">
-          <div>
-            <img src="images/main.png" alt="カメラの写真" class="camera">
+        <!-- メイン画像 -->
+        <div>
+          <img src="images/main.png" alt="カメラの写真" class="mainpic">
+        </div>
+
+        <!-- About -->
+        <h1 id="about">About</h1>   
+        <section class="about">
+          <img src="images/about.png" alt="Kazuki写真" class="circle">
+
+          <div class="content">
+            <p class="name">Kazuki Asahina</p>
+            <ul>
+              <li>25歳 長野県佐久市出身</li>
+              <li>ソフトウェア業界でマーケティングに従事</li>
+              <li>趣味はカメラ、愛機はCanon</li>
+              <li>自然を撮影するのが好きで、海や山によく行く</li>
+            </ul>
           </div>
-        </section>
-
-         <h1 id="about">About</h1>          
-
-         <div id="kazuki-photo">
-          <img src="images/about.png" alt="Kazuki写真" class="kazuki-photo">
-         </div>
-
-         <div id="kazuki-asahina-txt">
-          <h2 class="kazuki-asahina-txt">Kazuki Asahina</h2>
-        </div>
-
-        <div id="profile">
-         <ul>
-            <li>25歳 長野県佐久市出身</li>
-            <li>ソフトウェア業界でマーケティングに従事</li>
-            <li>趣味はカメラ、愛機はCanon</li>
-            <li>自然を撮影するのが好きで、海や山によく行く</li>
-          </ul>
-        </div>
+        </section>       
    
 
-        <!-- <section id="works"> -->
-          <h1 id="works">Works</h1>
+        <!-- WORKS-->
 
-          <div id="works1">
+        <h1 id="works">Works</h1>
+
+        <section class="works">
+          <!-- 写真の「下」にテキストを入れるというのは、どこで指定しているのか 
+          写真とテキストを入れる部分の高さや幅はどこで指定しているのか-->
+          <div class="item">
             <img src="images/works1.png" alt="海の写真" class="works1">
-          </div>
-          <div id="works1-txt">
             <p>新潟に訪れた際に、日本海の雄大さに魅了されて撮影した１枚</p>
           </div>
 
-          <div id="works2">
-            <img src="images/works2.png" alt="雪山の写真" class="works2">
-          </div>
-          <div id="works2-txt">
+          <!-- 左右に隙間を開けるために、"item_center" クラスを付与-->
+          <!-- div名が変？「item item_center」ではなく「item_center」では？ -->
+          <div id="item item_center">
+            <img src="images/works2.png" alt="雪山の写真">
             <p>地元長野の木曽町から撮影した、冠雪した御岳山</p>
           </div>
 
-
-          <div id="works3">
-            <img src="images/works3.png" alt="街の写真" class="works3">
-          </div> 
-          <div id="works3-txt">
+          <div class="item">
+            <img src="images/works3.png" alt="街の写真">
             <p>京都で撮影した、明け方の古き良き日本の街並み</p>
           </div>
-        <!-- </section> -->
+        </section>
       </article>  
     </main>
     
     <footer>
-      <div id="footer">
-        <span>&copy;MyProfile All Rights Reserved. </span>
-      </div>
+      <p>&copy;MyProfile. All rights reserved. </p>
     </footer>
   </body>
 
