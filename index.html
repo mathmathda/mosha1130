@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> 
     <link href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
 
     <!-- 以下はフォント？ -->
@@ -40,6 +40,8 @@
 
         <!-- About -->
         <h1 id="about">About</h1>   
+
+        <!--ここからフレックスボックス -->
         <section class="about">
           <img src="images/about.png" alt="Kazuki写真" class="circle">
 
@@ -54,22 +56,23 @@
           </div>
         </section>       
    
-
         <!-- WORKS-->
-
         <h1 id="works">Works</h1>
 
+
+
+
+        <!-- ここからフレックスボックス -->
         <section class="works">
-          <!-- 写真の「下」にテキストを入れるというのは、どこで指定しているのか 
-          写真とテキストを入れる部分の高さや幅はどこで指定しているのか-->
+    
           <div class="item">
-            <img src="images/works1.png" alt="海の写真" class="works1">
+            <img src="images/works1.png" alt="海の写真" class="works1">  
             <p>新潟に訪れた際に、日本海の雄大さに魅了されて撮影した１枚</p>
           </div>
 
           <!-- 左右に隙間を開けるために、"item_center" クラスを付与-->
           <!-- div名が変？「item item_center」ではなく「item_center」では？ -->
-          <div id="item item_center">
+          <div class="item">
             <img src="images/works2.png" alt="雪山の写真">
             <p>地元長野の木曽町から撮影した、冠雪した御岳山</p>
           </div>
@@ -78,13 +81,17 @@
             <img src="images/works3.png" alt="街の写真">
             <p>京都で撮影した、明け方の古き良き日本の街並みですよ</p>
           </div>
-        </section>
+
+       </section> 
       </article>  
+
     </main>
     
     <footer>
       <p>&copy;MyProfile. All rights reserved. </p>
     </footer>
+
+
   </body>
 
   </html>

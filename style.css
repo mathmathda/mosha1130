@@ -84,7 +84,7 @@ img {
 
 /* なぜちゃんと頁の真ん中に来ているのか？？ */
 /* About */
-.about {
+.about { 
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
@@ -93,19 +93,19 @@ img {
   max-width: 960px;
 }
 
-/* マルク切り取る画像 */
-/* borderに色？丸に加工しなくても、元のイメージが丸い */
+/*丸く切り取る画像 */
+/* border-radius=10%だと、□の角が丸い感じ。これを50%にすると、四角が完全に〇になる*/
 .circle {
-  border-radius:  50%;
-  width: 280px;
-  height: 280px;
-  object-fit: cover;
+  border-radius:  50%; 
+  width: 280px; 
+  height: 280px; 
+  object-fit: cover; 
   border: 3px solid #999;
   padding: 3px;
 }
 
 /* プロフィールの説明部分 */
-.content {
+/* .content { */
   margin: 0 auto;
   padding-left: 40px;
 }
@@ -117,22 +117,20 @@ img {
   justify-content: center;
   margin: 20px auto 20px auto;
   max-width: 960px;
-  }
+}
 
-  /* 親ボックスの中の子ボックスのpaddingのことか？
-  1番目と3番目が左右の端に配置されるのはなぜか
-  中央の設定がわからない*/
 .item {
   padding-bottom: 60px;
   width: 25%;
 }
 
-
 /* Worksの画像と説明部分（2個目） */
-.item_center {
-  padding-right: 20px;
-  padding-left: 20px;
-}
+/* 以下、指定しないで、その代わりitemをspace-aroundで配置した */
+/* .item_center { */
+  /* padding-right: 20px; */
+  /* padding-left: 20px; */
+  /* width: 25%; */
+/* } */
 
 /* フッター */
 footer p {
@@ -149,3 +147,4 @@ footer p {
     padding-bottom: 40px;
   }
 }
+
